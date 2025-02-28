@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Entry</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Create a New Diary Entry</h1>
+    <form action="/new" method="post">
+        <label>Title:</label>
+        <input type="text" name="title" required>
+        
+        <label>Content:</label>
+        <textarea name="content" required></textarea>
+        
+        <label>Schedule Date & Time (GMT+8):</label>
+        <input type="datetime-local" name="scheduledDateTime" required>
+        
+        <button type="submit">Schedule Entry</button>
+    </form>
+    <a href="/">Back</a>
+</body>
+</html>

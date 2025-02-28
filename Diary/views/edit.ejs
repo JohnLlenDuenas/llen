@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Entry</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Edit Diary Entry</h1>
+    <form action="/edit/<%= diary._id %>" method="post">
+        <label>Title:</label>
+        <input type="text" name="title" value="<%= diary.title %>" required>
+        <label>Content:</label>
+        <textarea name="content" required><%= diary.content %></textarea>
+        <button type="submit">Update</button>
+    </form>
+    <a href="/">Back</a>
+</body>
+</html>
